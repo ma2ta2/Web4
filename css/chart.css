@@ -1,0 +1,109 @@
+/********** СБРОС CSS  ***********/
+
+html * {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+body {
+	font-size: 85%;
+	line-height: 1.5em;
+	overflow-y: scroll;
+}
+
+/********** СВОЙСТВА ПО УМОЛЧАНИЮ ***********/
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;	
+}
+.infoArea h3 {
+	padding-bottom: .5em;
+	padding-top: 0.5em;
+}
+
+li{
+	list-style: none;
+}
+
+ul, li{
+	color: #FF70FF;
+}
+a.a1 {
+color: #FF70FF;
+}
+
+a.a2 {
+color: #969E8D;
+}
+
+a:hover{
+	color: skyblue;
+}
+
+h4, li{
+	font-size: 1.3em;
+}
+
+.green, h2{
+	color: skyblue;
+}
+
+h1{
+	color: #fff;
+	font-size: 4.8em;
+}
+
+h2{
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+p{
+	font-size: 1em;
+}
+
+
+
+
+/********** ШАБЛОН ***********/
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: white;
+	color: DimGray;
+	font-size: 85%;
+}
+
+ul{
+	width: 230px;
+	background-color: white;
+	margin-left: 20px;
+}
+
+li a{
+	display: block;
+	color: #969E8D;
+	width: 196px;
+	padding: 3px 4px;
+	margin: 5px 13px;
+	border-bottom: 1px dotted skyblue;
+	
+	
+    -moz-transition: background-color .3s ease-in;
+    -webkit-transition: background-color .3s ease-in;
+    -o-transition: background-color .3s ease-in;
+    transition: background-color .3s ease-in;
+}
+
+.leftNavigation li a:hover, .leftNavigation li a.selected{
+	background-color: skyblue;
+	color: #fff;
+    -moz-transition: background-color 0.01s;
+    -webkit-transition: background-color 0.01s;
+    -o-transition: background-color 0.01s;
+    transition: background-color 0.01s;
+}

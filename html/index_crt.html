@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Style-Type" content="text/css" >
+		<title>Highcharts Example</title>
+<link rel="stylesheet" href="../css/chart.css" type="text/css">
+
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/jquery_csv.js"></script>
+		<script type="text/javascript" src="../js/chart_csv2.js"></script>
+	</head>
+	<body>
+		<script src="../js/highcharts.js"></script>
+		<script src="../js/exporting.js"></script>
+
+		<div id="container" ></div> <!--containerは要素名-->
+		<!--               (style="min-width: 740px; height: 420px; margin: 0 auto" 無くてもok -->
+		<p>・CPI</p>
+		<p> 全国の世帯が購入する各種の商品（財・サービス）の価格の平均的な変動を測定するものです。すなわち、ある時点の世帯の消費構造を基準に、</p>
+		<p>これと同等のものを購入した場合に必要な費用がどのように変動したかを指数値で表しています。</p>
+		<p>corecore_cpiは変動の激しいエネルギーや生鮮食品を除外したCPI。</p>
+		<p>・fceh</p>
+		<p> 家計最終消費支出。農林漁家世帯を除く1世帯当たり(二人以上)年平均1か月間の支出</p>
+		<p>・マネーストックM2</p>
+		<p>マネーストックとは、基本的に、通貨保有主体が保有する通貨量の残高（金融機関や中央政府が保有する預金などは対象外）です。</p>
+		<p>通貨保有主体の範囲は、居住者のうち、一般法人、個人、地方公共団体・地方公営企業が含まれます。このうち一般法人は預金取扱機関、</p>
+		<p>保険会社、政府関係金融機関、証券会社、短資等を除く法人です。</p>
+		<p>M2: 対象金融機関：日本銀行、国内銀行（除くゆうちょ銀行）、外国銀行在日支店、信金中央金庫、信用金庫、農林中央金庫、商工組合中央金庫</p>
+		<p>M2＝現金通貨＋国内銀行等に預けられた預金</p>
+		
+		<br>
+		<a href = "../data/inf_data3.csv">使用データ</a>
+		は、<br>corecore_cpi:「平成22年基準消費者物価指数 長期時系列データ 品目別価格指数 全国(月次)」（総務省統計局）より<br>
+		食料（酒類を除く）及びエネルギーを除く総合データから引用。<a href = "http://www.e-stat.go.jp/SG1/estat/List.do?bid=000001033702&cycode=0">参照ページ</a>
+		<br>fceh:「家計調査（家計収支編） 時系列データ（二人以上の世帯）」（総務省統計局）より<br>
+		農林漁家世帯を除く結果の（昭和38年～平成24年）（全国）年次データから引用。<a href = "http://www.stat.go.jp/data/kakei/longtime/index.htm#longtime">参照ページ</a>
+		<br>m2:「時系列データ：国際収支」（財務省）より"Ｍ２／平残前年比／マネーストック（2004年3月以前はマネーサプライ）を引用。
+		<a href = "http://www.stat-search.boj.or.jp/#">参照ページ</a>の通貨量
+		<noscript>
+		        <p>JavaScriptがオフになっています。オンにして実行してください。</p>
+    		</noscript>
+	</body>
+</html>
